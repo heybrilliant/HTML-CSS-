@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>review</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"
+    integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('*').css('color','red'); // set 메소드
+
+            // var = 전역변수, 함수의 범위 
+            // value는 이 함수 안에서만 쓰여짐, 바깥에서 쓰여지지 못함!
+            var value = $('input[type=text]').val('안녕!'); // get메소드 호출과 같다
+            console.log(value);
+        });
+    </script>
+</head>
+<body>
+    <input type="text" value="hello!">
+
+    <h1>안녕하세요!</h1>
+</body>
+</html>

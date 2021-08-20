@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>캐리_내 정보 수정</title>
+    <title>Document</title>
 </head>
+<style>
+    img {
+        width: 150px;
+        height: 150px;
+    }
+</style>
+
 <body>
-    
+    <img src="images/basicphoto.png"><br>
+    <a>프로필 사진 수정</a><br>
+    캐리 소개 <form><textarea cols="50" rows="5"></textarea></form><br>
+    소속 플레이스<input type="search"><br>
+    종목 <input type="radio" name="choice" value="헬스">헬스 
+    <input type="radio" name="choice" value="필라테스">필라테스 
+    <input type="radio" name="choice" value="요가">요가<br>
+    전문 분야 <input type="checkbox" value="다이어트"> 다이어트 <input type="checkbox" value="근력 강화"> 근력 강화 <input type="checkbox" value="체중 증가"> 체중 증가 <input type="checkbox" value="체형 교정"> 체형 교정 <input type="checkbox" value="재활/통증 케어"> 재활/통증 케어 <input type="checkbox" value="바디프로필"> 바디프로필 <input type="checkbox" value="대회 준비"> 대회 준비 <input type="checkbox" value="기타"> 기타  <br>
+    PT 이용금액 <input type="text" placeholder="1회 금액 (숫자만 입력해주세요)"> <br>
+    <input type="text" placeholder="5회 금액 (숫자만 입력해주세요)"> <br>
+    <input type="text" placeholder="10회 금액 (숫자만 입력해주세요)"> <br>
+    <input type="text" placeholder="20회 금액 (숫자만 입력해주세요)"> <br>
+ 
+    비대면 수업 가능 여부 <input type="radio" name="choice" value="비대면 수업 여부"> 가능 <input type="radio" name="choice" value="비대면 수업 불가능"> 불가능가능 <br>
+    자격 및 경력 <br>
+    (최대 5개까지 입력 가능합니다)
+    <input type="text" placeholder="자격 및 경력1"> <br>
+    <input type="text" placeholder="자격 및 경력2"> <br>
+    <input type="text" placeholder="자격 및 경력3"> <br>
+    <input type="text" placeholder="자격 및 경력4"> <br>
+    <input type="text" placeholder="자격 및 경력5"> <br>
+    바디프로필 업로드 <input type="text" placeholder="파일 이름"><input type="file" id="userphoto" value="업로드"><br>
+    <input type="button" value="수정 완료"> <input type="button" value="취소">
+
 </body>
+
 </html>

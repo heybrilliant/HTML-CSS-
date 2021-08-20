@@ -1,0 +1,42 @@
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8' />
+  <link href='main.css' rel='stylesheet' />
+  <script src='main.js'></script>
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var calendarEl = document.getElementById('calendar');
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth',
+        googleCalendarApiKey: 'AIzaSyBb9KIHi5zg1Z5VVH_dlbMSugTIIH-SrfM',
+        events: {
+          googleCalendarId: 'gs1ta9q6ftv9p8uhcc0ghtv0so@group.calendar.google.com',
+          className: 'gcal-event' // an option!
+        } ,
+        eventClick : function(info){
+          info.jsEvent.stopPropagation();
+          info.jsEvent.preventDefault();
+        }
+      });
+      calendar.render();
+    });
+
+  </script>
+</head>
+
+<body>
+  <div id='calendar'></div>
+</body>
+
+</html>
+
+<!--  let calendar = new Calendar(calendarEl, {
+    plugins: [ googleCalendarPlugin ],
+    googleCalendarApiKey: '<YOUR API KEY>',
+    events: {
+      googleCalendarId: 'abcd1234@group.calendar.google.com',
+      className: 'gcal-event' // an option!
+    }
+  });  -->

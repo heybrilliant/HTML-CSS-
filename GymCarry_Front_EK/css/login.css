@@ -15,9 +15,17 @@
 
   body {
     font-family: "AppleSDGothicNeo";
-    min-height: 100vh;
     font-size: 1.125em;
     line-height: 1.6;
     background: white;
     place-items: center;
+  }
+  
+.wrap {
+    width: 50%;
+    margin: 3rem auto;
+    margin-top: 140px;
+    padding: 2em;
+    box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
+    background:b;
   }

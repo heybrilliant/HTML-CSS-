@@ -1,23 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>아이디 찾기</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/swiper.css">
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/index.js"></script>
+
+  <title>아이디 찾기</title>
+  <script src="js/includeHTML.js"></script>
+  <script src="js/includeRouter.js"></script>
+
 </head>
 <style>
- 
+
 
 </style>
 
 <body>
-    <div>
-         <input id="regid" type="text" placeholder="가입시 등록하신 이름"> <br>
-         <input id="regphonenum"type="text" placeholder="가입시 등록하신 휴대폰 번호 "> <br>
-        <input type="submit" value="찾기">
+  <!-- Header -->
+  <header include-html="header.html"></header>
+  <!-- Header End -->
 
+  <!-- Contents -->
+  <div class="find">
+    <nav class="find_nav">
+      <ul>
+        <li>
+          <a class="findid" href="findid.html">아이디 찾기</a>
+        </li>
+        <li>
+          <a class="findpassword" href="findpassword.html">비밀번호 찾기</a>
+        </li>
+        <form>
+          <input id="regid" type="text" placeholder="가입시 등록하신 이름"> <br>
+          <input id="regphonenum" type="text" placeholder="가입시 등록하신 휴대폰 번호 "> <br>
+          <input type="submit" value="찾기">
+        </form>
+  </div>
 
-    </div>
+  <!-- Footer -->
+  <header include-html="footer.html"></header>
+  </footer>
+  </div>
+
+  <script>
+
+    includeHTML(function () {
+      includeRouter(function () {
+        // do something in the future
+      });
+    });
+  </script>
+
 </body>
+
 </html>

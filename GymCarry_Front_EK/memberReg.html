@@ -18,9 +18,18 @@
     <script src="js/includeRouter.js"></script>
 </head>
 <style>
-    * {
-        font-color: #fff, #333, #a02323, rgb(94, 94, 94);
-        background-color: #fff, #000;
+    .wrap {
+        width: 100%;
+    }
+
+    .memberReg {
+        margin: 140px auto 0;
+        text-align: center;
+        box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
+        width: 40%;
+        background: b;
+        justify-content: center;
+        padding: 30px;
     }
 
     input[type="button"] {
@@ -28,9 +37,15 @@
     }
 
     #join {
-        background-color: steelblue;
+        background-color: #000;
+        color: #fff;
         width: 120px;
         height: 40px;
+    }
+
+    #join a:hover {
+        background: #fff;
+        color: #000;
     }
 
     #cancle {
@@ -39,9 +54,14 @@
         height: 40px;
     }
 
-    #memberReg>img[src="image/icon/profile.png"] {
-        width: 300px;
-        height: 300px;
+    #cancle a:hover {
+        background: #000;
+        color: #fff;
+    }
+
+    .memberReg>form>img {
+        width: 150px;
+        height: 150px;
     }
 
     input[type="text"] {
@@ -54,27 +74,27 @@
     <!-- Header -->
     <header include-html="header.html"></header>
     <!-- Header End -->
-
-    <div class="memberReg">
-        <h1>회원 회원가입</h1><br>
-        <br>
-        <form>
-            <img src="image/icon/profile.png"><br>
-            <a> 프로필 사진 수정</a> <br>
-            이름 <input id="name" type="text"> <br>
-            이메일 주소 <input id="email" type="text"><br>
-            비밀번호 <input id="pw" type="text"><br>
-            비밀번호 확인 <input id="repw" type="text"><br>
-            닉네임 <input id="nickname" type="text"><br>
-            핸드폰 번호 <input id="phonenum" type="text"><br>
-            생년월일 <input id="birth" type="text"><br>
-            성별 <input id="gender" type="radio" name="choice" value="남자"> 남자 <input type="radio" name="choice"
-                value="여자"> 여자
+    <div class="wrap">
+        <div class="memberReg">
+            <h1 class="title">회원 회원가입</h1><br>
             <br>
-            <input id="join" type="button" value="회원가입"> <input id="cancle" type="button" value="취소">
-        </form>
+            <form>
+                <img src="image/icon/profile.png"><br>
+                <a> 프로필 사진 수정</a> <br>
+                이름 <input id="name" type="text"> <br>
+                이메일 주소 <input id="email" type="text"><br>
+                비밀번호 <input id="pw" type="text"><br>
+                비밀번호 확인 <input id="repw" type="text"><br>
+                닉네임 <input id="nickname" type="text"><br>
+                핸드폰 번호 <input id="phonenum" type="text"><br>
+                생년월일 <input id="birth" type="text"><br>
+                성별 <input id="gender" type="radio" name="choice" value="남자"> 남자 <input type="radio" name="choice"
+                    value="여자"> 여자
+                <br>
+                <input id="join" type="button" value="회원가입"> <input id="cancle" type="button" value="취소">
+            </form>
+        </div>
     </div>
-
     <!-- Footer -->
     <header include-html="footer.html"></header>
     </footer>

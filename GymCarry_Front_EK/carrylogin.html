@@ -6,16 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/swiper.css">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/index.js"></script>
-    
+
     <title>캐리 로그인</title>
     <script src="js/includeHTML.js"></script>
     <script src="js/includeRouter.js"></script>
 </head>
+<style>
+    .wrap {
+        width : 100%;
+    }
+
+    .clogin {
+        margin: 140px auto 0;
+        text-align: center;
+        box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
+        width: 40%;
+        background: b;
+        justify-content: center;
+    }
+</style>
 
 <body>
     <!-- Header -->
@@ -23,30 +37,34 @@
     <!-- Header End -->
 
     <div class="wrap">
-        <h1>캐리 로그인</h1>
-        <br>
-        아이디<input type="text"><br>
-        비밀번호<input type="text"><br>
-        <input type="checkbox" value="on"> 아이디 기억하기 <br>
-        <input type="button" value="로그인">
-        <a href="memberlogin.html">회원로그인</a><br> <!-- 언더라인, 회원로그인 변환 링크 -->
-        <a href="carryReg.html">일반 회원가입</a> <a href="findid.html">아이디 찾기</a> <a href="findpassword.html">비밀번호 찾기</a>
-        <hr>
+        <div class="clogin">
+            <h1>캐리 로그인</h1>
+            <br>
+            <form>
+                아이디<input type="text"><br>
+                비밀번호<input type="text"><br>
+                <input type="checkbox" value="on"> 아이디 기억하기 <br>
+                <input type="button" value="로그인">
+                <a href="memberlogin.html">회원로그인</a><br> <!-- 언더라인, 회원로그인 변환 링크 -->
+                <hr>
+                <a href="carryReg.html">일반 회원가입</a> <a href="findid.html">아이디 찾기</a> <a href="findpassword.html">비밀번호
+                    찾기</a>
+            </form>
+        </div>
+
+        <!-- Contents end -->
+        <!-- Footer -->
+        <header include-html="footer.html"></header>
+        </footer>
     </div>
+    <script>
 
-    <!-- Contents end -->
-  <!-- Footer -->
-  <header include-html="footer.html"></header>
-  </footer>
-  </div>
-  <script>
-
-    includeHTML(function () {
-      includeRouter(function () {
-        // do something in the future
-      });
-    });
-  </script>
+        includeHTML(function () {
+            includeRouter(function () {
+                // do something in the future
+            });
+        });
+    </script>
 </body>
 
 </html>

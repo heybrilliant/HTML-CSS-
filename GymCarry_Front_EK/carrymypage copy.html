@@ -17,79 +17,70 @@
     <script src="js/includeRouter.js"></script>
 </head>
 <style>
-    .container {
+    #container {
         display: flex;
         flex-wrap: wrap;
-        width: 100%;
-        margin : 140px auto 0;
+        width: 70%;
+        margin: 140px auto 0;
         justify-content: center;
+        gap: 20px;
     }
 
-    .container>.main {
+    .main {
+        padding-top: 20px;
         text-align: center;
-        margin-bottom: 30px;
+        width: 1200px;
+        min-width: 500px;
+        height: auto;
+        background-color: gray;
     }
 
-    .container>.mypage .todaylist {
+    #container>.mypage .todaylist {
         display: inline-flex;
     }
 
-    .container>.main {
-        width: 1200px;
-        height: auto;
-        background-color: gray;
-        justify-content: center;
-    }
-
-    .container>.main>img {
+    #container>.main>img {
         width: 200px;
         height: 200px;
+
     }
 
-    .container>.main>a>#edit {
+    #container>.main>a>#edit {
         width: 20px;
         height: 20px;
+        vertical-align: middle;
     }
-    .container>.main>.calendar{
+
+    #container>.main>.calendar {
         width: 80%;
         height: auto;
         justify-content: center;
     }
 
-    .container>.mypage{
-        width: 350px;
-        height: 150px;
-        margin-right: 50px;
-        padding-top: px;
+    .second-line {
+        display: flex;
+        min-width: 500px;
+        width: 1200px;
+        flex-wrap: nowrap;
+        gap: 20px;
+    }
+
+    .modi-list {
         background-color: lavender;
-        text-align: center;
-        display: table;
-    }
-    .container>.mypage>h3{
-        margin-bottom: 10px;
-        display: table-cell;
-        vertical-align: middle;
+        width: 35%;
+        height: auto;
     }
 
-    .container>.mypage>ul>li{
-        display: table-cell;
-        vertical-align: middle;
-    }
-
-    .container>.todaylist {
-        text-align: center;
-        width: 800px;
-        height: 150px;
+    .today-schedule {
         background-color: honeydew;
+        width: 65%;
+        height: auto;
     }
 
-    .container>.todaylist>li>img {
+    .today-schedule>li>img{
         width: 20px;
         height: 20px;
-    }
-
-    .container>.todaylist>li {
-        float: left;
+        vertical-align: middle;
     }
 
 </style>
@@ -100,7 +91,7 @@
     <!-- Header End -->
 
 
-    <div class="container">
+    <div id="container">
         <div class="main">
             <img src="image/icon/profile.png"><br>
             <h3>캐리 이름</h3> <a href="modifycarrybasicinfo.html"><img id="edit" src="image/icon/edit.png"></a>
@@ -109,27 +100,32 @@
             </div>
         </div>
 
-        <div class="mypage">
-            <h3>My Page</h3>
-            <ul>
-                <li>
-                    <a href="modifycarrybasicinfo.html">기본 정보 수정</a>
-                </li><br>
-                <li>
-                    <a href="modifycarryinfo.html">캐리 정보 수정</a>
-                </li><br>
-                <li>
-                    <a href="carry_mymemberlist.html">내 회원 리스트</a>
-                </li><br>
-            </ul>
-        </div>
 
-        <div class="todaylist">
-            <li>
-                <h3>오늘의 일정</h3><img src="image/icon/edit.png">
-            </li>
+        <div class="second-line">
+            <div class="modi-list">
+                <h3>My Page</h3>
+                <ul>
+                    <li>
+                        <a href="modifycarrybasicinfo.html">기본 정보 수정</a>
+                    </li><br>
+                    <li>
+                        <a href="modifycarryinfo.html">캐리 정보 수정</a>
+                    </li><br>
+                    <li>
+                        <a href="carry_mymemberlist.html">내 회원 리스트</a>
+                    </li><br>
+                </ul>
+            </div>
+
+            <div class="today-schedule">
+                <li>
+                    <h3>오늘의 일정</h3><img src="image/icon/edit.png">
+                </li>
+            </div>
         </div>
     </div>
+
+
     <!-- Contents end -->
     <!-- Footer -->
     <header include-html="footer.html"></header>

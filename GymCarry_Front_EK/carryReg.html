@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
@@ -15,9 +15,29 @@
     <script src="js/includeRouter.js"></script>
 </head>
 <style>
-    #regform>img {
-        width: 100px;
+    .wrap {
+        width: 100%;
+    }
+
+    .regform {
+        margin: 140px auto 0;
+        text-align: center;
+        box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
+        width: 55%;
+        background: b;
+        justify-content: center;
+        padding: 30px;
+    }
+
+    .regform>form>img {
+        width: 150px;
         height: 150px;
+    }
+
+    .title {
+        font-weight: 900;
+        line-height: 0.8;
+        text-align: center;
     }
 
     input[type="text"] {
@@ -30,24 +50,26 @@
     <!-- Header -->
     <header include-html="header.html"></header>
     <!-- Header End -->
-
-    <h1>캐리 회원가입</h1><br>
-    <br>
-    <div class="regform">
-        <img src="image/icon/profile.png"><br>
-        <a href="<input type=" file" name="carryphoto">프로필 사진 등록</a> <br>
-        이름 <input type="text"> <br>
-        이메일 주소 <input type="text"><br>
-        비밀번호 <input type="text"><br>
-        비밀번호 확인 <input type="text"><br>
-        소속 플레이스 <input type="text"><br>
-        예명 <input type="text"><br>
-        핸드폰 번호 <input type="text"><br>
-        생년월일 <input type="text"><br>
-        성별 <input type="radio" name="choice" value="남자"> 남자 <input type="radio" name="choice" value="여자"> 여자 <br>
-        <input type="button" value="회원가입"> <input type="button" value="취소">
+    <div class="wrap">
+        <div class="regform">
+            <h1 class="title">캐리 회원가입</h1><br>
+            <form>
+                <img src="image/icon/profile.png"><br>
+                <a href="<input type=" file" name="carryphoto">프로필 사진 등록</a> <br>
+                이름 <input type="text"> <br>
+                이메일 주소 <input type="text"><br>
+                비밀번호 <input type="text"><br>
+                비밀번호 확인 <input type="text"><br>
+                소속 플레이스 <input type="text"><br>
+                예명 <input type="text"><br>
+                핸드폰 번호 <input type="text"><br>
+                생년월일 <input type="text"><br>
+                성별 <input type="radio" name="choice" value="남자"> 남자 <input type="radio" name="choice" value="여자"> 여자
+                <br>
+                <input type="button" value="회원가입"> <input type="button" value="취소">
+            </form>
+        </div>
     </div>
-
     <!-- Contents end -->
     <!-- Footer -->
     <header include-html="footer.html"></header>

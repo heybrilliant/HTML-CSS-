@@ -30,6 +30,59 @@
         justify-content: center;
         padding: 30px;
     }
+
+    input[type="text"] {
+        width: 400px;
+        height: 40px;
+        margin: 7px;
+        border-radius: 5px;
+        padding-left: 10px;
+    }
+
+    input[type="button"] {
+        width: 100px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 12px;
+        text-align: center;
+        border: 1px solid #333;
+        border-radius: 25%;
+        cursor: pointer;
+        margin: 15px 5px;
+    }
+
+    input[type="button"]:hover {
+        background: #000;
+        color: #fff;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    hr{
+        margin-bottom: 20px;
+    }
+    .change {
+        display: flex;
+        justify-content: center;
+    }
+
+    .change>li {
+        width: 150px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .tab2{
+        border-left: 2px solid #ddd;
+        color: #929192
+    }
+
+    .changeli:first-child {
+        border: 0;
+    }
 </style>
 
 <body>
@@ -39,16 +92,27 @@
     <div class="wrap">
         <div class="memberlogin">
             <h1 class="title">회원 로그인</h1>
+            <br>
             <form>
                 아이디<input type="text"><br>
                 비밀번호<input type="text"><br>
                 <input type="checkbox" value="on"> 아이디 기억하기 <br>
                 <input type="button" value="로그인">
+                <a href="carrylogin.html">캐리로그인</a><br> <!-- 언더라인, 캐리로그인 변환 링크 -->
+                <hr>
+                <ul class="change">
+                    <li>
+                        <a href="memberReg.html">일반 회원가입</a>
+                    </li>
+                    <li class="tab2">
+                        <a href="findid.html">아이디 찾기</a>
+                    </li>
+                    <li class="tab2">
+                        <a href="findpassword.html">비밀번호
+                            찾기</a>
+                    </li>
+                </ul>
             </form>
-            <a href="carrylogin.html">캐리로그인</a><br> <!-- 언더라인, 캐리로그인 변환 링크 -->
-            <a href="memberReg.html">일반 회원가입</a> <a href="findid.html">아이디 찾기</a> <a href="findpassword.html">비밀번호
-                찾기</a>
-            <hr>
         </div>
     </div>
     <!-- Footer -->

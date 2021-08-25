@@ -43,6 +43,40 @@
     input[type="text"] {
         width: 400px;
         height: 40px;
+        margin: 7px;
+        border-radius: 5px;
+        padding-left: 10px;
+    }
+
+    input[type="button"] {
+        width: 100px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 12px;
+        text-align:center;
+        border: 1px solid #333;
+        border-radius: 10%;
+        cursor: pointer;
+        margin: 15px 5px;
+    }
+
+    #join {
+        background-color: #000;
+        color: #fff;
+    }
+
+    #join:hover {
+        background: #ccc;
+        color: #000;
+    }
+
+    #cancle {
+        background-color: #fff;
+    }
+
+    #cancle:hover {
+        background: #ccc;
+        color: #fff;
     }
 </style>
 
@@ -66,7 +100,7 @@
                 생년월일 <input type="text"><br>
                 성별 <input type="radio" name="choice" value="남자"> 남자 <input type="radio" name="choice" value="여자"> 여자
                 <br>
-                <input type="button" value="회원가입"> <input type="button" value="취소">
+                <input id="join" type="button" value="회원가입"> <input id="cancle" type="button" value="취소">
             </form>
         </div>
     </div>

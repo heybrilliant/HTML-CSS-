@@ -8,14 +8,32 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/swiper.css">
+
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/index.js"></script>
 
+    <!-- 캘린더 -->
+    <link rel="stylesheet" href="css/carrycalendar.css">
+    <script src="js/carrycalendar.js"></script>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth'
+            });
+            calendar.render();
+        });
+
+    </script>
+
     <title>캐리 마이페이지</title>
     <script src="js/includeHTML.js"></script>
     <script src="js/includeRouter.js"></script>
+
 </head>
+
 <style>
     #container {
         display: flex;
@@ -32,17 +50,13 @@
         width: 1200px;
         min-width: 500px;
         height: auto;
-        background-color: gray;
-    }
-
-    #container>.mypage .todaylist {
-        display: inline-flex;
+        background-color: snow;
     }
 
     #container>.main>img {
         width: 200px;
         height: 200px;
-
+        margin-top: 20px;
     }
 
     #container>.main>a>#edit {
@@ -51,10 +65,18 @@
         vertical-align: middle;
     }
 
-    #container>.main>.calendar {
+    #container>.main>#calendar {
         width: 80%;
+        margin-top: 20px;
+        margin-bottom: 50px;
         height: auto;
+        display: inline-block;
+        text-align: center;
         justify-content: center;
+    }
+
+    #container>.mypage .todaylist {
+        display: inline-flex;
     }
 
     .second-line {
@@ -63,6 +85,11 @@
         width: 1200px;
         flex-wrap: nowrap;
         gap: 20px;
+    }
+
+    .title {
+        font-size: 20px;
+        margin: 20px auto;
     }
 
     .modi-list {
@@ -77,12 +104,11 @@
         height: auto;
     }
 
-    .today-schedule>li>img{
+    .today-schedule>li>.insert>img {
         width: 20px;
         height: 20px;
         vertical-align: middle;
     }
-
 </style>
 
 <body>
@@ -94,8 +120,11 @@
     <div id="container">
         <div class="main">
             <img src="image/icon/profile.png"><br>
-            <h3>캐리 이름</h3> <a href="modifycarrybasicinfo.html"><img id="edit" src="image/icon/edit.png"></a>
-            <div class="calendar">
+            <h3 class="title">캐리 이름</h3>
+            <a href="modifycarrybasicinfo.html">
+                <img id="edit" src="image/icon/edit.png">
+            </a>
+            <div id="calendar">
                 <calendar include-html="fullcalendar2.html"></calendar>
             </div>
         </div>
@@ -119,7 +148,10 @@
 
             <div class="today-schedule">
                 <li>
-                    <h3>오늘의 일정</h3><img src="image/icon/edit.png">
+                    <h3>오늘의 일정</h3>
+                    <a class="insert" href="#">
+                        <img src="image/icon/edit.png">
+                    </a>
                 </li>
             </div>
         </div>

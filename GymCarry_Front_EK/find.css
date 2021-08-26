@@ -16,10 +16,6 @@ table, tr, td, th, div, p, em, ol, ul, li, dl, dt, dd, a, address, img, h2, h3, 
     text-align: center;
 }
 
-img {
-    border:0; 
-}
-
 .form_txtInput{
     padding: 20px;
 }
@@ -30,13 +26,13 @@ h1 {
 }
 
 .wrap{
-    width: 30%;
+    width:40%;
     box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
-    max-width:960px; 
-    margin: 140px auto 0;}
+    margin: 140px auto;
+}
 
 .wrap.wd668{
-    width: 50%;
+    width: 40%;
     min-width:40%;
     text-align: center;
 }
@@ -45,10 +41,10 @@ h1 {
     width:100%;
 }
 
-.place>button:hover{
-    cursor: pointer;
+.sub_tit_txt{
+    color: #2f2f2f; 
+    font-size: 20px;
 }
-
 
 #btnbox{
     text-align: center;
@@ -96,13 +92,24 @@ h1 {
     color: #fff;
 }
 
-.find_form table th{
-    text-align:left;
+.find_form{
+    width: 100%;
 }
 
-.find_form table th span{color:#404040;font-size:14px; display:inline-block; position:relative;padding:0 10px 0 0; text-indent:20px;}
 
-.find_form table td{padding:6px 0;position: relative;}
+.find_form table {
+    border-spacing: 0;
+    margin:0;
+    padding:0; 
+    border:0;
+    width:100%;
+}
+
+.find_form table td{
+    width:100%; 
+    display: inline-block;
+    padding:6px 0;
+    position: relative;}
 
 .find_form table input{ 
     border:1px solid #ececec;
@@ -127,19 +134,6 @@ h1 {
 }
 
 
-.find_form table input[type="radio"]{
-    height: 20px;
-    flex-wrap: nowrap;
-    justify-content : center;
-}
-
-
-.find_form table input.email{
-    width:100%; 
-    display: inline-block;
-}
-
-
 .tab {
     display: flex;
     width: 100%;
@@ -148,13 +142,13 @@ h1 {
 
   .tab>li {
     width: 50%;
-    height: 40px;
+    height: 60px;
     margin-bottom: 15px;
-  }
+}
 
-  .tab>li>a {
-    height: 40px;
-    line-height: 40px;
+.tab>li>a {
+    height: 60px;
+    line-height: 60px;
     display: block;
     text-decoration: none;
     border-radius: 4px 4px 0 0;
@@ -162,7 +156,7 @@ h1 {
     color: #fff;
     cursor: pointer;
     border: 0px solid #ccc;
-  }
+}
 
   .tab>li>a:hover {
     background: #ddd;

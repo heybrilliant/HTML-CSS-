@@ -16,67 +16,6 @@
   <script src="js/includeRouter.js"></script>
 
 </head>
-<style>
-  /* .wrap {
-    width: 100%;
-  }
-
-  .findzone {
-    margin: 140px auto 0;
-    text-align: center;
-    box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
-    width: 35%;
-    background: b;
-    justify-content: center;
-  }
-
-  .class>ul {
-    list-style: none;
-    text-align: center;
-  }
-
-  .class>ul>li {
-    display: inline-block;
-    border: 0;
-    padding: 0px 20px 0px 20px;
-    margin: 30px 0px 30px 0px;
-  }
-
-  .class>ul>li>a {
-    float: left;
-  }
-
-  input[type="text"] {
-    width: 300px;
-    height: 40px;
-    margin: 7px;
-    border-radius: 5px;
-    padding-left: 10px;
-  }
-
-  input[type="submit"] {
-    width: 100px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 12px;
-    text-align: center;
-    border: 1px solid #333;
-    border-radius: 25%;
-    cursor: pointer;
-    margin: 15px 5px;
-  }
-
-  input[type="submit"]:hover {
-    background: #000;
-    color: #fff;
-  }
-
-  a:hover {
-    text-decoration: underline;
-    cursor: pointer;
-  } */
-
-</style>
 
 <body>
   <!-- Header -->
@@ -88,23 +27,38 @@
     <div class="container">
       <ul class="tab">
         <li class="active">
-          <a class="findid" href="findid.html">아이디 찾기</a>
+          <a class="sub_tit_txt" href="findid.html">아이디 찾기</a>
         </li>
         <li>
-          <a class="findpassword" href="findpassword.html">비밀번호 찾기</a>
+          <a class="sub_tit_txt" href="findpassword.html">비밀번호 찾기</a>
         </li>
       </ul>
 
+        <div class="form_txtInput">
+          <div class="find_form">
+            <table>
+              <tr>
+                <td>
+                  <input id="regid" type="text" placeholder="가입시 등록하신 이름">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input id="regphonenum" type="text" placeholder="가입시 등록하신 휴대폰 번호 ">
+                </td>
+              </tr>
+            </table>
+            <div id="btnbox">
+              <div class="btn_wrap">
+                <a href="javascript:;">찾기</a>
+              </div>
+            </div>
+          </div>
 
-      <table>
-        <div class="find_form">
-          <input id="regid" type="text" placeholder="가입시 등록하신 이름">
-          <input id="regphonenum" type="text" placeholder="가입시 등록하신 휴대폰 번호 ">
-      </table>
-      <input type="submit" value="찾기">
+        </div>
     </div>
   </div>
-  </div>
+
 
   <!-- Footer -->
   <header include-html="footer.html"></header>

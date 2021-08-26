@@ -16,6 +16,12 @@ table, tr, td, th, div, p, em, ol, ul, li, dl, dt, dd, a, address, img, h2, h3, 
     text-align: center;
 }
 
+.sub_tit_txt{
+    margin:20px; 
+    color: #2f2f2f; 
+    font-size: 28px;
+}
+
 img {
     border:0; 
 }
@@ -100,13 +106,35 @@ h1 {
     color: #fff;
 }
 
+.login_form{
+    width:100%;
+}
+
+.login_form table {
+    border-spacing: 0;
+    margin:0;
+    padding:0; 
+    border:0;
+    width:100%;
+}
+
 .login_form table th{
     text-align:left;
 }
 
-.login_form table th span{color:#404040;font-size:14px; display:inline-block; position:relative;padding:0 10px 0 0; text-indent:20px;}
+.login_form table th span{
+    color:#404040;
+    font-size:14px; 
+    display:inline-block; 
+    position:relative;
+    padding:0 10px 0 0; 
+    text-indent:20px;
+}
 
-.login_form table td{padding:6px 0;position: relative;}
+.login_form table td{
+    padding:6px 0;
+    position: relative;
+}
 
 .login_form table input{ 
     border:1px solid #ececec;
@@ -170,4 +198,8 @@ hr{
 
 .change>ul>li:first-child {
     border: 0;
+}
+
+.selectbox{
+    margin-top: 10px auto 0;
 }

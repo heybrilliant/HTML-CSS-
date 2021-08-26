@@ -16,6 +16,12 @@ table, tr, td, th, div, p, em, ol, ul, li, dl, dt, dd, a, address, img, h2, h3, 
     text-align: center;
 }
 
+.sub_tit_txt{
+    margin:20px; 
+    color: #2f2f2f; 
+    font-size: 28px;
+}
+
 img {
     border:0; 
 }
@@ -42,6 +48,7 @@ h1 {
 
 .wrap{
     width: 60%;
+    height: auto;
     box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
     max-width:960px; 
     margin: 140px auto 0;}
@@ -54,6 +61,8 @@ h1 {
 
 .container{
     width:100%;
+    height: auto;
+    padding-bottom: 10px;
 }
 
 .place{
@@ -66,12 +75,13 @@ h1 {
     position:absolute;
     top:50%;
     right:0px;
-    transform: translateY(0%);
+    transform: translateY(10%);
     border:none;
     width:60px;
     cursor: pointer;
     z-index: 1;
 }
+
 
 .place>button:hover{
     cursor: pointer;
@@ -80,6 +90,7 @@ h1 {
 
 #btnbox{
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .btn_wrap, .btn_wrap2{
@@ -124,19 +135,43 @@ h1 {
     color: #fff;
 }
 
+
+.edit_form{
+    width:100%;
+}
+
+.edit_form table {
+    border-spacing: 0;
+    margin:0;
+    padding:0; 
+    border:0;
+    width:100%;
+}
+
+
 .edit_form table th{
     text-align:left;
 }
 
-.edit_form table th span{color:#404040;font-size:14px; display:inline-block; position:relative;padding:0 10px 0 0; text-indent:20px;}
+.edit_form table th span{
+    color:#404040;
+    font-size:14px; 
+    display:inline-block; 
+    position:relative;
+    padding:0 10px 0 0; 
+    text-indent:20px;}
 
-.edit_form table td{padding:6px 0;position: relative;}
+.edit_form table td{
+    padding:6px 0;
+    position: relative;
+}
 
 .edit_form table input{ 
     border:1px solid #ececec;
     font-size:14px;
     color:#4c4c4c; 
     height:40px; 
+    margin: 5px auto;
     padding:10px; 
     width:100%; 
     float:left;
@@ -159,6 +194,9 @@ h1 {
 } */
 
 .edit_form table input[type="radio"]{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: repeat(4, minmax(50px, auto));
     height: 20px;
     flex-wrap: nowrap;
     justify-content : center;
@@ -174,3 +212,18 @@ h1 {
     width:100%; 
     display: inline-block;
 }
+
+.selectbox{
+    display: grid;
+    justify-content : center;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: repeat(minmax(50px, auto));
+   
+}
+
+.selectbox>label {
+    text-align: center;
+  }
+  .form {
+    margin-left: 10px;
+  }

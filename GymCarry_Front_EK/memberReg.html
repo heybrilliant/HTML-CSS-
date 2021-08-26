@@ -17,58 +17,6 @@
     <script src="js/includeHTML.js"></script>
     <script src="js/includeRouter.js"></script>
 </head>
-<style>
-    /* .wrap {
-        width: 100%;
-    }
-
-    .memberReg {
-        margin: 140px auto 0;
-        text-align: center;
-        box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
-        width: 40%;
-        background: b;
-        justify-content: center;
-        padding: 30px;
-    }
-
-    input[type="text"] {
-        width: 400px;
-        height: 40px;
-        margin: 7px;
-        border-radius: 5px;
-        padding-left: 10px;
-    }
-
-    #join {
-        background-color: #000;
-        color: #fff;
-    }
-
-    #join:hover {
-        background: #ccc;
-        color: #000;
-    }
-
-    #cancle {
-        background-color: #fff;
-    }
-
-    #cancle:hover {
-        background: #ccc;
-        color: #fff;
-    }
-
-    .memberReg>form>img {
-        width: 150px;
-        height: 150px;
-    }
-
-    input[type="text"] {
-        width: 400px;
-        height: 40px;
-    } */
-</style>
 
 <body>
     <!-- Header -->
@@ -130,7 +78,12 @@
                             </tr>
                             <tr>
                                 <th><span>성별</span></th>
-                                <td><input type="radio" name="choice" value="남자"> 남자 <input type="radio" name="choice" value="여자"> 여자</td>
+                                <td>
+                                    <div class="selectbox">
+                                        <input type="radio" name="choice" value="남자"> 남자 <input type="radio"
+                                            name="choice" value="여자"> 여자
+                                    </div>
+                                </td>
                             </tr>
                         </tbody>
                     </table>

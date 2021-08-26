@@ -6,8 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/login.css">
-  <link rel="stylesheet" href="css/swiper.css">
+  <link rel="stylesheet" href="find.css">
   <script src="http://code.jquery.com/jquery-latest.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/index.js"></script>
@@ -18,7 +17,7 @@
 
 </head>
 <style>
-  .wrap {
+  /* .wrap {
     width: 100%;
   }
 
@@ -75,44 +74,7 @@
   a:hover {
     text-decoration: underline;
     cursor: pointer;
-  }
-
-  .tab {
-    display: inline-block;
-    width: 100%;
-    padding: 0;
-  }
-
-  .tab>li {
-    display: inline;
-    float: left;
-    margin-bottom: 8px;
-  }
-
-  .tab>li>a {
-    text-decoration: none;
-    padding: .5em 1em;
-    border-radius: 4px 4px 0 0;
-    background: #ccc;
-    color: #fff;
-    cursor: pointer;
-  }
-
-  .tab>li>a:hover {
-    background: #ddd;
-  
-  }
-
-  .tab>li.active>a {
-    border: 1px solid #ddd;
-    border-bottom-color: transparent;
-    cursor: default;
-    color: #000;
-  }
-
-  .tab>li.active>a:hover {
-    background: #fff;
-  }
+  } */
 
 </style>
 
@@ -122,8 +84,8 @@
   <!-- Header End -->
 
   <!-- Contents -->
-  <div class="wrap">
-    <div class="findzone">
+  <div class="wrap wd668">
+    <div class="container">
       <ul class="tab">
         <li class="active">
           <a class="findid" href="findid.html">아이디 찾기</a>
@@ -133,12 +95,15 @@
         </li>
       </ul>
 
-      <form>
-        <input id="regid" type="text" placeholder="가입시 등록하신 이름"> <br>
-        <input id="regphonenum" type="text" placeholder="가입시 등록하신 휴대폰 번호 "> <br>
-        <input type="submit" value="찾기">
-      </form>
+
+      <table>
+        <div class="find_form">
+          <input id="regid" type="text" placeholder="가입시 등록하신 이름">
+          <input id="regphonenum" type="text" placeholder="가입시 등록하신 휴대폰 번호 ">
+      </table>
+      <input type="submit" value="찾기">
     </div>
+  </div>
   </div>
 
   <!-- Footer -->

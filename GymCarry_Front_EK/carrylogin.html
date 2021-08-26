@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="login.css">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/index.js"></script>
@@ -16,110 +15,75 @@
     <script src="js/includeHTML.js"></script>
     <script src="js/includeRouter.js"></script>
 </head>
-<style>
-    .wrap {
-        width: 100%;
-    }
-
-    .clogin {
-        margin: 140px auto 0;
-        text-align: center;
-        box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
-        width: 40%;
-        background: b;
-        justify-content: center;
-        padding: 30px;
-    }
-
-    input[type="text"] {
-        width: 400px;
-        height: 40px;
-        margin: 7px;
-        border-radius: 5px;
-        padding-left: 10px;
-    }
-
-    input[type="button"] {
-        width: 100px;
-        height: 40px;
-        line-height: 40px;
-        font-size: 12px;
-        text-align: center;
-        border: 1px solid #333;
-        border-radius: 25%;
-        cursor: pointer;
-        margin: 15px 5px;
-    }
-
-    input[type="button"]:hover {
-        background: #000;
-        color: #fff;
-    }
-
-    a:hover{
-        text-decoration: underline;
-        cursor: pointer;
-    }
-    
-    hr{
-        margin-bottom: 20px;
-    }
-    .change {
-        display: flex;
-        justify-content: center;
-    }
-
-    .change>li {
-        width: 150px;
-        text-align: center;
-        cursor: pointer;
-    }
-
-    .tab2{
-        border-left: 2px solid #ddd;
-        color: #929192
-    }
-
-    .changeli:first-child {
-        border: 0;
-    }
-</style>
 
 <body>
     <!-- Header -->
     <header include-html="header.html"></header>
     <!-- Header End -->
 
-    <div class="wrap">
-        <div class="clogin">
-            <h1 class="title">캐리 로그인</h1>
-            <br>
-            <form>
-                아이디<input type="text"><br>
-                비밀번호<input type="text"><br>
-                <input type="checkbox" value="on"> 아이디 기억하기 <br>
-                <input type="button" value="로그인">
-                <a href="memberlogin.html">회원로그인</a><br> <!-- 언더라인, 회원로그인 변환 링크 -->
+
+    <div class="wrap wd668">
+        <div class="container">
+            <div class="form_txtInput">
+                <h1 class="sub_tit_txt">캐리 로그인</h1>
+                <div class="login_form">
+
+                    <table>
+                        <colgroup>
+                            <col width="40%" />
+                            <col width="auto" />
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th><span>아이디</span></th>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><span>비밀번호</span></th>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                    <input type="checkbox" value="on"> 아이디 기억하기
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+                    <div id="btnbox">
+                        <div class="btn_wrap">
+                            <a href="javascript:;">로그인</a>
+                        </div>
+                        <a id="alter" href="memberlogin.html">멤버로그인</a><br> <!-- 언더라인, 캐리로그인 변환 링크 -->
+                    </div>
+                </div><!-- join_form E  -->
+
                 <hr>
-                <ul class="change">
-                    <li>
-                        <a href="carryReg.html">캐리 회원가입</a>
-                    </li>
-                    <li class="tab2">
-                        <a href="findid.html">아이디 찾기</a>
-                    </li>
-                    <li class="tab2">
-                        <a href="findpassword.html">비밀번호
-                            찾기</a>
-                    </li>
-                </ul>
-            </form>
-        </div>
-    </div>
-        <!-- Contents end -->
-        <!-- Footer -->
-        <header include-html="footer.html"></header>
-        </footer>
+                <div class="change">
+                    <ul>
+                        <li>
+                            <a href="memberReg.html">일반 회원가입</a>
+                        </li>
+                        <li class="tab2">
+                            <a href="findid.html">아이디 찾기</a>
+                        </li>
+                        <li class="tab2">
+                            <a href="findpassword.html">비밀번호
+                                찾기</a>
+                        </li>
+                    </ul>
+                </div>
+            </div> <!-- form_txtInput E -->
+        </div><!-- content E-->
+    </div> <!-- container E -->
+
+
+    <!-- Footer -->
+    <header include-html="footer.html"></header>
+    </footer>
     </div>
     <script>
 

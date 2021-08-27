@@ -28,6 +28,7 @@ img {
 
 .form_txtInput{
     padding: 20px;
+    min-width: 473px;
 }
 
 h1 {
@@ -55,7 +56,7 @@ h1 {
 
 .wrap.wd668{
     width: 50%;
-    min-width:40%;
+    min-width: 473px;
     text-align: center;
 }
 
@@ -89,11 +90,15 @@ h1 {
 
 
 #btnbox{
+    width: fit-content;
+    justify-content: center;
     text-align: center;
-    margin-bottom: 20px;
+    margin: auto auto 20px;
 }
 
 .btn_wrap, .btn_wrap2{
+    display: inline-block;
+    width: fit-content;
     text-align:center;
     margin: 30px 5px;
 }

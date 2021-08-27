@@ -28,6 +28,7 @@ img {
 
 .form_txtInput{
     padding: 20px;
+    min-width: 473px;
 }
 
 h1 {
@@ -50,20 +51,25 @@ ul, li { list-style:none;}
 ul{list-style:none; }
 .red_txt{color:#ee7272;}
 .blind {display:block;overflow:hidden;position:absolute;left:0;top:-5000px}
+
+
 .wrap{
     width: 60%;
+    height: auto;
     box-shadow: 0 0 3em rgba(0, 0, 0, 0.15);
     max-width:960px; 
     margin: 140px auto 0;}
 
 .wrap.wd668{
     width: 45%;
-    min-width:40%;
+    min-width: 473px;
     text-align: center;
 }
 
 .container{
     width:100%;
+    height: auto;
+    padding-bottom: 10px;
 }
 
 .place{
@@ -83,12 +89,21 @@ ul{list-style:none; }
     z-index: 1;
 }
 
+.place>button:hover{
+    cursor: pointer;
+}
+
 
 #btnbox{
+    width: fit-content;
+    justify-content: center;
     text-align: center;
+    margin: auto auto 20px;
 }
 
 .btn_wrap, .btn_wrap2{
+    display: inline-block;
+    width: fit-content;
     text-align:center;
     margin: 30px 5px;
 }
@@ -131,31 +146,55 @@ ul{list-style:none; }
 }
 
 
-.selectbox{
-    display: grid;
-    grid-template-columns: 50px 1fr;
-    grid-template-rows: repeat(minmax(50px, auto));
+.join_form{
+    width:100%;
+}
+
+.join_form table {
+    border-spacing: 0;
+    margin:0;
+    padding:0; 
+    border:0;
+    width:100%;
 }
 
 .join_form table th{
     text-align:left;
 }
 
+
+.join_form table th span{
+    color:#404040;
+    font-size:14px; 
+    display:inline-block; 
+    position:relative;
+    padding:0 10px 0 0; 
+    text-indent:20px;}
+
+.selectbox{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: repeat(minmax(50px, auto));
+}
+
+
 .join_form table input{ 
     border:1px solid #ececec;
     font-size:14px;
     color:#4c4c4c; 
     height:40px; 
+    margin: 5px auto;
     padding:10px; 
     width:100%; 
     float:left;
 }
 
 .join_form table #btnbox{
-    display: inline-flex;
+    display: inline-block;
 }
 
 .join_form table input[type="radio"]{
+    width: fit-content;
     height: 20px;
     flex-wrap: nowrap;
     justify-content : center;
@@ -166,17 +205,6 @@ ul{list-style:none; }
     display: inline-block;
 }
 
-.join_form{
-    width:100%;
-    max-width:668px;
-}
-.join_form table {
-    border-spacing: 0;
-    margin:0;
-    padding:0; 
-    border:0;
-    width:100%;
-}
 
 
 

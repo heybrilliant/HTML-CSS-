@@ -153,18 +153,19 @@ h1 {
     text-decoration: none;
     border-radius: 4px 4px 0 0;
     background: #ccc;
-    color: #fff;
+    color: #000;
     cursor: pointer;
     border: 0px solid #ccc;
 }
 
   .tab>li>a:hover {
-    background: #ddd;
+    background: #fff;
   }
 
   .tab>li.active>a {
     border-bottom-color: transparent;
     cursor: default;
+    background-color: #fff;
     color: #000;
   }
 
